@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="20562" started-at="2020-08-03T23:24:07 IST" finished-at="2020-08-03T23:24:28 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="20562" started-at="2020-08-03T23:24:07 IST" finished-at="2020-08-03T23:24:28 IST">
+      <class name="automation.RahulFlightReservation">
+        <test-method status="PASS" signature="dynamicDropDown()[pri:0, instance:automation.RahulFlightReservation@6989da5e]" name="dynamicDropDown" duration-ms="20125" started-at="2020-08-03T23:24:08 IST" finished-at="2020-08-03T23:24:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dynamicDropDown -->
+      </class> <!-- automation.RahulFlightReservation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

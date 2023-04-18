@@ -1,0 +1,15 @@
+17:29:23.332 [main] INFO  automation.RahulFlightReservation - false
+17:29:23.471 [main] ERROR automation.RahulFlightReservation - false
+17:29:23.576 [main] FATAL automation.RahulFlightReservation - true
+17:29:23.592 [main] INFO  Utils.Listener - TC passed: TC01
+17:29:23.592 [main] INFO  Utils.Listener - TC started: validateSearchFunctionality
+17:29:44.429 [main] INFO  Utils.Listener - TC passed: validateSearchFunctionality
+14:54:31.503 [main] INFO  Utils.Listener - TC started: TC01
+14:54:37.792 [main] INFO  automation.RahulFlightReservation - false
+14:54:38.174 [main] ERROR automation.RahulFlightReservation - false
+14:54:38.364 [main] FATAL automation.RahulFlightReservation - true
+14:54:38.396 [main] INFO  Utils.Listener - TC passed: TC01
+14:54:38.398 [main] INFO  Utils.Listener - TC started: validateSearchFunctionality
+14:54:59.443 [main] INFO  Utils.Listener - TC passed: validateSearchFunctionality
+12:54:50.846 [main] INFO  Utils.Listener - TC started: TC01
+12:54:51.272 [main] INFO  Utils.Listener - TC passed: TC01
