@@ -31,10 +31,8 @@ public class Flipkart {
 
         String str = "Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!";
         Assert.assertEquals(str,commonFunctions.getPageTitle());
-
         System.out.println(str);
 
-        Assert.assertEquals(str+"TEST",commonFunctions.getPageTitle());
         driver.quit();
     }
 
