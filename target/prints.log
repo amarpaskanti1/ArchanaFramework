@@ -1,7 +1,0 @@
-12:59:15.143 [main] INFO  Utils.Listener - TC started: TC01
-12:59:16.247 [main] INFO  Utils.Listener - TC passed: TC01
-13:00:28.768 [main] INFO  Utils.Listener - TC started: TC01
-13:00:30.006 [main] INFO  Utils.Listener - TC passed: TC01
-13:01:29.400 [main] INFO  Utils.Listener - TC started: TC01
-13:01:29.849 [main] INFO  Utils.Listener - Taking screenshot TC01
-13:01:30.097 [main] INFO  Utils.Listener - TC failed: TC01, taking screenshot
