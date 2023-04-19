@@ -17,8 +17,8 @@
 	<build>
 		<resources>
 			<resource>
-				<directory>logs</directory>
-				<targetPath>${project.build.directory}</targetPath>
+				<directory>src/main/resources/</directory>
+<!--				<targetPath>${project.build.directory}</targetPath>-->
 			</resource>
 		</resources>
 
