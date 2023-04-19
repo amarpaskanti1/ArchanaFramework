@@ -23,7 +23,7 @@ public class Flipkart {
         flipkartHomePage = new FlipkartHomePage(driver);
     }
 
-    @Test
+    @Test(priority = 0)
     public void TC01() throws InterruptedException {
         commonFunctions.customClick(flipkartHomePage.getCancelButton());
         commonFunctions.enterText(flipkartHomePage.getSearchBox(), "Mobile");
@@ -34,6 +34,15 @@ public class Flipkart {
         System.out.println(str);
         Assert.assertEquals(str+"TEST",commonFunctions.getPageTitle());
 
+    }
+
+    @Test(priority = 1)
+    public void TC02(){
+        Assert.assertTrue(true);
+    }
+
+    @Test(priority = 2)
+    public void TC03(){
         driver.quit();
     }
 

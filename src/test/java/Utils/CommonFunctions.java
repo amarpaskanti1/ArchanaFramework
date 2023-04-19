@@ -1,6 +1,9 @@
 package Utils;
 
+import automation.Hotels;
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -14,6 +17,7 @@ import java.util.List;
 public class CommonFunctions extends Listener {
 
     public WebDriver driver;
+    private static Logger log = LogManager.getLogger(CommonFunctions.class.getName());
 
     public CommonFunctions() throws IOException {
         driver = Base.getDriver();
@@ -25,10 +29,12 @@ public class CommonFunctions extends Listener {
 
     public void customClick(WebElement ele) {
         ele.click();
+        log.debug("Clicked on button");
     }
 
     public void enterText(WebElement ele, String text) throws InterruptedException {
         ele.sendKeys(text);
+        log.debug("Entered text "+text);
     }
 
     public void selectCustomDropDownValue(WebElement ele, String value) {
