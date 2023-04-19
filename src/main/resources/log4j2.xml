@@ -23,11 +23,15 @@
 
 	<Loggers>
 
-		<Root level="info">
+<!--		<Root level="info">-->
+<!--			<AppenderRef ref="Console" />-->
+<!--			<AppenderRef ref="File" />-->
+<!--		</Root>-->
+
+		<Root level="debug">
 			<AppenderRef ref="Console" />
 			<AppenderRef ref="File" />
 		</Root>
-
 <!-- 		<Logger name="automation" level="trace" additivity="false"> -->
 
 	<!-- 	<Logger name="automation" level="trace" additivity="false">

@@ -29,12 +29,12 @@ public class CommonFunctions extends Listener {
 
     public void customClick(WebElement ele) {
         ele.click();
-        log.debug("Clicked on button");
+        log.debug("Clicked on button " + String.valueOf(ele));
     }
 
     public void enterText(WebElement ele, String text) throws InterruptedException {
         ele.sendKeys(text);
-        log.debug("Entered text "+text);
+        log.debug("Entered text "+text +" in " + String.valueOf(ele));
     }
 
     public void selectCustomDropDownValue(WebElement ele, String value) {
