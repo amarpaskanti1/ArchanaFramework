@@ -1,6 +1,7 @@
 package Utils;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -25,7 +26,6 @@ public class Base {
     private static WebDriver InitialiseDriver() throws IOException {
 
         String browserName = System.getProperty("Browser");
-
         System.out.println("Browser name got from jenkins is "+browserName);
 
         if (browserName.equalsIgnoreCase("Chrome")) {
@@ -38,10 +38,9 @@ public class Base {
             driver = new ChromeDriver();
         }
 
-        //        System.setProperty("webdriver.chrome.driver", "C:\\Resources\\chromedriver.exe");
         driver.get(ReadProperties.getPropertyValue("URL"));
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         return driver;
     }
 }
