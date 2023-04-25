@@ -12,7 +12,9 @@ import org.testng.annotations.AfterSuite;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class CommonFunctions extends Listener {
 
@@ -78,13 +80,15 @@ public class CommonFunctions extends Listener {
     }
 
     public void explicitWait(WebElement e) {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(e));
     }
 
     public void jsClick(WebElement e) {
-        JavascriptExecutor executor = (JavascriptExecutor) driver;
-        executor.executeScript("arguments[0].click();", e);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", e);
+        js.executeScript("arguments[0].ScrollIntoView()",e);
+
     }
 
 
