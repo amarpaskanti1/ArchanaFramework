@@ -94,7 +94,7 @@ public class Listener implements ITestListener {
 
         // To add system or environment info by using the setSystemInfo method.
         extent.setSystemInfo("OS", "Windows");
-        extent.setSystemInfo("Browser", "Chrome");
+        extent.setSystemInfo("Browser", System.getProperty("Browser"));
         extent.setSystemInfo("Tester", "AP");
 
         // configuration items to change the look and feel
